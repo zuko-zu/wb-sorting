@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Визуализация алгоритмов сортировки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="sorting-visualizer">
+    <div class="sorting-visualizer__sorting-area">
+      <div class="array-container">
+        <!-- Здесь будет отображаться массив для сортировки -->
+    </div>
+    </div>
+    <div class="sorting-visualizer__options">
+      <div class="controls">
+        <label for="arrayLength" min="1" max="30">Введите длину массива</label>
+        <input type="number" class="input" id="arrayLength" placeholder="Введите размер массива" value="20">
+        <label for="speed" min="50" max="5000">Введите скорость сортировки в миллисекундах</label>
+        <input type="number" class="input" id="speed" placeholder="Введите скорость сортировки в миллисекундах" value="100">
+        <label for="algorithm">Выберите алгоритм</label>
+        <select class="input" id="algorithm">
+          <option value="bubble">Bubble sort</option>
+          <option value="merge">Merge sort</option>
+          <option value="quick">Quick sort</option>
+          <option value="selection">Selection sort</option>
+          <option value="insertion">Insertion sort</option>
+      </select>
+        <button class="button start-btn">Начать сортировку</button>
+        <button class="button stop-btn">Остановить сортировку</button>
+    </div>
+    </div>
+  </section>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/sortings.js"></script>
+
+</body>
+</html>
